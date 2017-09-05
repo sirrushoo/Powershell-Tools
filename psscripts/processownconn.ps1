@@ -1,4 +1,5 @@
-﻿function Get-NetworkStatistics
+#PS script to find ports and the processes owning them
+function Get-NetworkStatistics
 {
     $properties = ‘Protocol’,’LocalAddress’,’LocalPort’
     $properties += ‘RemoteAddress’,’RemotePort’,’State’,’ProcessName’,’PID’
