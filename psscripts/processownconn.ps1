@@ -1,4 +1,20 @@
-﻿function Get-NetworkStatistics
+﻿<#
+.SYNOPSIS
+Checks what ports and processes associated with those ports
+Author: Sirrush
+Required Dependencies: LocalHost Admin
+Optional Dependencies: None
+ 
+.DESCRIPTION
+Checks what ports and processes associated with those ports
+.PARAMETER 
+Check that execution policy is set correctly
+.EXAMPLE
+C:\processownconn.ps1
+#>
+
+
+function Get-NetworkStatistics
 {
     $properties = ‘Protocol’,’LocalAddress’,’LocalPort’
     $properties += ‘RemoteAddress’,’RemotePort’,’State’,’ProcessName’,’PID’

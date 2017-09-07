@@ -1,5 +1,17 @@
-# All WiFi SSID's and passwords stored locally on Windows OS.
-# Make sure that executionpolicy is set correctly
+<#
+.SYNOPSIS
+All WiFi SSID's and passwords stored locally on Windows OS.
+Author: Sirrush
+Required Dependencies: LocalHost Admin
+Optional Dependencies: None
+ 
+.DESCRIPTION
+Retrieves password of Wifi's which you have successfully connected to previously
+.PARAMETER 
+Check that execution policy is set correctly
+.EXAMPLE
+C:\ps_netshwifi.ps1
+#>
 $output = netsh.exe wlan show profiles
 $profileRows = $output | Select-String -Pattern 'All User Profile'
 $profileNames = New-Object System.Collections.ArrayList
