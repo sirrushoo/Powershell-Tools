@@ -1,0 +1,9 @@
+How to :
+
+1. Open Powershell (Win7-10) or command prompt you must open it as an Administrator
+
+2. type or copy of course you are pointing to the actual Path and Directory of the script
+
+schtasks /create /tn myTask /tr "powershell -NoLogo -WindowStyle hidden -file C:\Path\Directory\Log-Connections.ps1 iplog.csv" /sc minute /mo 1 /ru System
+
+
