@@ -1,0 +1,15 @@
+How does one connect a scammer to a linux or any other non-windows OS?
+
+Step 1 Well the first step is to create a Windows VM using your virtualization software.  
+Step 2 Allocate enough resources to that Windows VM at least two cpus and at least 4 gigs of RAM.  
+Step 3 Install VMware or Virtual Box onto the Windows VM.  
+Step 4 Download the Linux or other Operating sytem you want distrowatch.com is a good resource for Linux downloads.
+Step 5 Set up the Linux VM ensuring that it is working well you must allocate at least 1 cpu and 1 gig of RAM for this VM
+Step 6 You will have your Linux VM up and running in full screen mode switch to the Windows VM follow the scammers instructions and once they connect go back to your Linux VM
+
+If you have multiple monitors you can move your guest OS to that monitor which will make it easier for a full screen.
+
+
+https://www.youtube.com/watch?v=ckMOs8Ah4zQ (Full screen)
+
+https://www.youtube.com/watch?v=VTaZbpjg_1w (VM with in a VM )
