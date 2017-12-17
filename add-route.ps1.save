@@ -1,0 +1,14 @@
+# You must edit this script to fit your network config
+# cmd example
+#  
+# route ADD destination_network MASK subnet_mask  gateway_ip metric_cost
+#
+# PowerShell
+# New-NetRoute [-DestinationPrefix] <String> -InterfaceAlias <String> [-AddressFamily <AddressFamily> ] [-AsJob] [-CimSession <CimSession[]> ] [-NextHop <String> ] [-PolicyStore <String> ] [-PreferredLifetime <TimeSpan> ] [-Protocol <Protocol> ] [-Publish <Publish> ] [-RouteMetric <UInt16> ] [-ThrottleLimit <Int32> ] [-ValidLifetime <TimeSpan> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
+#
+#
+#
+#
+
+
+ New-NetRoute –DestinationPrefix "10.0.0.0/24" –InterfaceIndex 12 –
